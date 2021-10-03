@@ -1,4 +1,0 @@
-x = "Arjun"
-print(x)
-
-
