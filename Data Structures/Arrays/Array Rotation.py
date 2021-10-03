@@ -18,3 +18,29 @@ def method_1(arr, d):
     print("temp array : {} array : {} Final Array : {}".format(temp,arr,final_array))
 
 method_1([1,2,3,4,5,6,7], 2)
+
+'''
+Method 2 : Rotating the array one by one
+Let's define a function which could rotate an array by one and 
+recursively call that function 
+'''
+def leftRotateByOne(arr):
+    temp = arr[0]
+    n = len(arr)
+    for i in range(n-1):
+        arr[i] = arr [i+1]
+    arr[n-1] = temp
+
+def letfRotate(arr,d):
+    for i in range(d):
+        leftRotateByOne(arr)
+
+def printArray(arr):
+    size = len(arr)
+    for i in range(size):
+        print ("% d"% arr[i], end =" ")
+
+# main code
+arr = [1,2,3,4,5,6,7,8]
+letfRotate(arr,2)
+printArray(arr)
