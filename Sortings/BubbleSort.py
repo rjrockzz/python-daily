@@ -2,9 +2,9 @@
 Bubble Sort : just swap the adjacent elements and always
 remember the last elements gets sorted first
 
-- Best : 
-- Worst : 
-_ Average :
+- Best : O(n^2) , can be reduced to O(n)
+- Worst : O(n^2)
+_ Average : O(n^2)
 Summary :  Find the minimum element move to the sorted sub array.
 '''
 def bubbleSort(arr):
