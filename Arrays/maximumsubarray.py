@@ -17,7 +17,7 @@
 # start deleting the first elements
 
 arr = [1,4,3,5,7]
-x_sum = 8
+x_sum = 2
 
 def max_sum_arr(arr, x_sum):
     for i in range(len(arr)-1):
@@ -33,5 +33,6 @@ def max_sum_arr(arr, x_sum):
                     l +=1
                 print('{} {}'.format(l,j))
                 return 1
+    return "No Match Found!"       
 
 max_sum_arr(arr, x_sum)
